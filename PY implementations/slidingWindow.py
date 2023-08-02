@@ -24,7 +24,19 @@ def max_avg(arr, k):
         max_avg = max(max_avg, current_sum/k)
         return max_avg
 
+def longestSubstring(s):
+    left = 0
+    longest = 0
+    ans = {}
+    for right in range(len(s)):
+        if s[right] in ans:
+            left = ans[s[right]] + 1
+        
+        ans[s[right]] = right
+        longest = max(longest, (right - left) + 1)
+    return longest       
 
 lists = [1, 12, -5,-6,50,3]
+s = "abcabcbb"
+print(longestSubstring(s))
 
-print(max_avg(lists, 4))
