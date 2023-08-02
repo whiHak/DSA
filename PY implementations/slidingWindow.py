@@ -46,7 +46,7 @@ def longestSubstring(s):
 
     for right in range(len(s)):
 
-        if s[right] in occurance and ans[s[right]] >= left:
+        if s[right] in occurance and occurance[s[right]] >= left:
 
             left = occurance[s[right]] + 1
         
