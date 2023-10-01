@@ -1,0 +1,69 @@
+
+public class Reverse {
+    private class Node{
+        public int value;
+        public Node next;
+    
+        public Node(int value){
+            this.value = value;
+        }
+    }
+    private Node first;
+    private Node last;
+
+    public void add(int item) {
+        var node = new Node(item);
+
+        if (isEmpty()) {
+            first = last = node;
+        } else {
+            last.next = node;
+            last = node;
+        }
+    }
+
+    private boolean isEmpty() {
+        return (first == null);
+    }
+
+    public void reverseLinkedList() {
+        Node current = first;
+        Node previous = null;
+
+        while (current != null) {
+            var temp = current.next;
+            current.next = previous;
+
+            previous = current;
+            current = temp;
+            
+        }
+        first = previous;
+    }
+
+    public void displayNodes() {
+        var node = first;
+
+        while (node != null) {
+            System.out.println(node.value);
+            node = node.next;
+        }
+
+    }
+    public static void main(String[] arg) {
+        Reverse lists = new Reverse();
+        lists.add(10);
+        lists.add(20);
+        lists.add(30);
+        lists.add(40);
+        lists.add(50);
+        
+        lists.reverseLinkedList();
+        lists.displayNodes();
+
+    }
+    
+}
+
+
+ 

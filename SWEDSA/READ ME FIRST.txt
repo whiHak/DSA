@@ -1,0 +1,7 @@
+Name: Betselot Abraham
+Id: 1612/14
+Section: 1
+
+**All the implementations of each questions are found in this folder.. Incase the .java file doesn't work the copy of the 
+	code is found in .txt file. 
+** All of the implementations are using java  **
