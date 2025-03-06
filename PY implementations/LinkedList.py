@@ -3,7 +3,7 @@ class Node:
         self.item = item
         self.next = None
 
-
+  
 class Linked:
 
     def __init__(self):
