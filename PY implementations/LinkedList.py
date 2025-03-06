@@ -48,7 +48,7 @@ class Linked:
             print(node.item, end=" -> ")
             node = node.next
 
-
+ 
 lists = Linked()
 lists.appened(30)
 lists.appened(40)
