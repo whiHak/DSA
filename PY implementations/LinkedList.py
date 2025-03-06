@@ -55,4 +55,4 @@ lists.appened(40)
 lists.appened(50)
 lists.prepend(20)
 lists.delete(40)
-lists.display()
+lists.display();
