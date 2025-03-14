@@ -17,3 +17,4 @@ stack.push(40)
 stack.push(50)
 stack.pop()
 stack.display()
+  
