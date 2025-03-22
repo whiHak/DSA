@@ -8,6 +8,7 @@ class Stack:
         return pop_item
     def display(self):
         print(self.stack)
+        
 
 stack = Stack()
 stack.push(10)
